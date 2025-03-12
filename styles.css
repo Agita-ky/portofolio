@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #b0bed4, #a2b7d3);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #171d20;
+  color: #c3c6dd;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Ukuran font yang lebih besar untuk judul */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.9); /* Warna latar belakang lebih cerah */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center; /* Menyelaraskan judul bagian ke tengah */
+  color: #35424a; /* Warna judul yang konsisten */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 80px; /* Jarak antar kolom proyek */
+}
+
+.project {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex; /* Menggunakan Flexbox untuk penataan */
+  flex-direction: column; /* Mengatur arah kolom */
+  align-items: center; /* Menyelaraskan item di tengah */
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 200%; /* Mengatur lebar gambar agar responsif */
+  max-width: 410px; /* Atur lebar maksimum gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
+  max-height: 350px; /* Atur tinggi gambar untuk konsistensi */
+  object-fit: cover; /* Menjaga rasio aspek gambar */
+  border-radius: 5px; /* Menambahkan sudut yang membulat */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.project-img:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #35424a;
+  color: #ffffff }
+
+  
+.profile-container {
+  display: flex; /* Menggunakan Flexbox */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+.profile-img {
+  width: 200px; /* Atur lebar gambar */
+  height: 200px; /* Atur tinggi gambar */
+  border-radius: 10%; /* Membuat gambar bulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+  margin-right: 20px; /* Menambahkan jarak antara gambar dan teks */
+}
